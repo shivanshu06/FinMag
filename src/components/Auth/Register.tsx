@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { UserPlus, Mail, Lock, User, Wallet } from 'lucide-react';
 import { useAuth } from '../../contexts/AuthContext';
 
@@ -152,7 +153,8 @@ export default function Register() {
             <p className="text-sm text-gray-600">
               Already have an account?{' '}
               <Link
-                to="/login"
+             
+                 href="/login"
                 className="font-medium text-blue-600 hover:text-blue-500 transition-colors"
               >
                 Sign in
